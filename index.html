@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frustaci, una empresa falimiar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="header">
+        <!--Logo + menu de navegación-->
+        <nav class="navegador">
+            <div class="logo">
+                <h1><a href="index.html">Frustaci</a></h1>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="views/productos.html">Galeria</a></li>
+                    <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="views/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="boton-menu">
+                    <button id="close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <button id="open">
+                      <i class="fas fa-bars"></i>
+                    </button>
+        </div>
+
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <ul>
+                <li ><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="views/productos.html">Galeria</a></li>
+                <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+<!--caja para imagen de fondo la ponemos con estilos-->
+
+
+    <main class="main-inicio">
+        <section class="bienvenidos">
+            <div class="portada">
+                    <h2>Bienvenidos</h2>
+            </div>
+        </section>
+
+        <section class="nosotros">
+            <div>
+                <h2>EL AUTOR</h2>
+            </div>
+            <div class="contenedor-nosotros">
+                <div>
+                    <img src="images/LeonardoFrustaci.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        Leonardo Frustaci es un enólogo italiano nacido en Albi, provincia de Catanzaro, 
+                        con más de 60 años dedicados a la elaboración de vinos. Desde el año 1963, Leonardo Frustaci diseña 
+                        y elabora sus vinos con marca propia. Con la intención de ofrecer la mejor relación calidad-precio, 
+                        hoy está presente en todas las latitudes de Italia como así también en otros países de la región
+                        y del mundo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bodega">
+            
+            <div class="titulo-bodega">
+                <h2>NUESTRA BODEGA</h2>
+            </div>
+            <div class="contenedor-bodega">
+                <div>
+                    <img src="images/bodega.jpg" alt="">
+                </div>
+                <div>
+                    <p>En nuestra bodega, continúa la historia que nace en un pueblo de Catanzaro llamado Albi   con el viñedo de la familia Frustaci. Una historia que combina trabajo artesanal,
+                        tradición y tecnología, para crear experiencias únicas a la hora de disfrutar de grandes vinos.
+                        En un marco que respeta el histórico estilo de la colonia, la elaboración de nuestros vinos se realiza en piletas
+                        de diferentes tamaños, con el fin de preservar la calidad de nuestras uvas. 
+                        La producción y el almacenaje del vino en barricas de roble son cuidados en todos sus detalles.
+                        Como uno de los más calificados exponentes de los vinos del nuevo mundo, Frustaci exporta sus productos a 
+                        más de 20 países, y se ha convertido, desde hace años, en un privilegiado embajador internacional de la alta 
+                        calidad del vino italiano.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fin">
+
+        <div class="redes-sociales">
+            <p>Seguinos en nuestras redes sociales:</p>
+            <div class="redes-content">
+                <a href="https://es-es.facebook.com/">
+                    <img src="images/facebook.png" alt="facebook" class="iconoF">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" alt="instagram" class="iconoI">
+                </a>
+            </div>
+        </div>
+        <div class="copy-ubicacion">
+
+            <p>&copy; Frustaci - 2023 | Todos los derechos reservados</p>
+            <p>Ubicacion: <a href="https://goo.gl/maps/pu9de5rHUd3ZGuiF7">Catanzaro, Italia</a></p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

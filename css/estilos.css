@@ -1,0 +1,1111 @@
+/* Importación de Google Font "Cinzel" */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    font-family: Verdana;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+}
+
+/**************************/
+/**********HEADER**********/
+/**************************/
+
+header{
+    width: 100%;
+}
+
+/**********Menu navegación**********/
+
+/*Color, ubicacion, flex, tamaño*/
+.navegador{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #930909;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/*Editar logo, ubicacion, tamaño, letra,*/
+.navegador .logo{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.navegador .logo h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 550;
+    color: #fff;
+    font-family: Cinzel, verdana;
+}
+
+/*Ediatar menu, ubicacion, color, tamaño,*/
+.navegador .menu{
+    margin-right: 20px;
+}
+
+.navegador .menu ul{
+    display: flex;
+}
+
+.navegador .menu ul li{
+    list-style: none;
+}
+
+.navegador .menu ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/*Para cuando pase por arriba cambie de color*/
+.navegador .menu ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*Para cuando este en esa pagina se quede en blanco la casilla*/
+.navegador .menu ul li a.activo{
+    background-color: #fff;
+    color: black;
+}
+
+/***************************************/
+/**********SECCION BIENVENIDA**********/
+/**************************************/
+
+
+
+/*colocar una imagen de fondo*/
+.bienvenidos{
+    width: 100%;
+    height: 70vh; /*100%de la pantalla, es lo que ves en pantalla*/
+    background: url(../images/vinedo.jpg);/*para poner una imagen de fondo*/
+    background-attachment: fixed; 
+    background-position: center;/*quede centrada*/
+    background-size: cover;
+}
+
+/*titulo ubicarlo, darle un tañano, */
+.bienvenidos .portada{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+.bienvenidos h2{
+    font-size: 80px;
+    color: #fff;
+    font-weight: 540;
+    text-align: center;
+}
+
+/*************************************/
+/**********SECCION NOSOTROS**********/
+/************************************/
+
+/*Caunto quiero que ocupe y el margen*/
+.nosotros{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+/*Editar el texto, tamaño, posicion,*/
+.nosotros h2{
+    width: 40%;
+    margin: 50px auto;
+    font-size: 36px;
+    font-weight:400 ;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #930909;
+}
+
+/*el contenedor donde esta la imagen y la info*/
+.nosotros .contenedor-nosotros{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Imagen, medidas, ubicacion, y los mismo con el parrafo*/
+.nosotros .contenedor-nosotros img{
+    width: 546px;
+    height: 396px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.nosotros .contenedor-nosotros p{
+    font-size: 16px;
+    text-align: center;
+    padding: 40px;
+    line-height: 2;
+}
+
+/*********************************/
+/*********SECCION BODEGA**********/
+/*********************************/
+
+/*Caunto quiero que ocupe y el margen*/
+.bodega{
+    width: 100%;
+    background-color: #e4c68e;
+    padding-bottom: 5%;
+    padding-top: 1%;
+   
+}
+
+/*Editar el texto, tamaño, posicion,*/
+.bodega h2{
+
+    width: 40%;
+    margin: 50px auto;
+    font-size: 36px;
+    font-weight:400 ;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #930909;
+}
+
+/*el contenedor donde esta la imagen y la info*/
+.bodega .contenedor-bodega{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Imagen, medidas, ubicacion, y los mismo con el parrafo*/
+.bodega .contenedor-bodega img{
+    width: 546px;
+    height: 396px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+.bodega .contenedor-bodega p{
+    font-size: 16px;
+    text-align: center;
+    padding: 40px;
+    line-height: 2;
+}
+
+
+/***************************/
+/***********FOOTER**********/
+/***************************/
+
+/*Footer, le damos flex para porder organizar a gusto, el tamaño de la letra
+en que lugar ubicarlo, cuanto ocupa*/
+.fin{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #930909;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/*Contenedor de redes sociales, le damos flex para poder ubicar una al lado de otra*/
+.fin .redes-sociales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.redes-sociales p{
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.redes-sociales .redes-content{
+    text-align: center;
+    margin-left: 5px;
+}
+
+.redes-sociales .redes-content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-sociales .iconoF{
+    width: 32px;
+    height: 32px;
+}
+
+.redes-sociales .iconoI{
+    width: 30px;
+    height: 30px;
+}
+
+/*Editar resto de info, margen, color, ubicación*/
+.fin .copy-ubicacion{
+    margin-right: 15px;
+}
+
+.fin .copy-ubicacion p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.fin .copy-ubicacion p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/******************************************************************************************************************************/
+
+/***************************/
+/***********GALERIA**********/
+/***************************/
+
+/*fondo imagen*/
+.main-productos{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/productos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*contenedor de vino, tamaño, color, borde*/
+.main-productos .seccion-tinto{
+    width: 90%;
+    margin: 40px auto 0px auto;
+   /* margin:0px auto;*/
+    background-color: #e4c68e;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.seccion-tinto .titulo-t{
+    border-bottom: 2px solid #930909;
+    padding: 15px;
+    text-align: center;
+    width: 50%;/*para que no ocupe toda la pagina*/
+    margin: auto;
+}
+
+.seccion-tinto .titulo-t h2{
+    font-size: 36px;
+    color: #930909;
+}
+
+/*Editar la galeria de imagenes, darle posicion flexible, que lo quiero uno al lado del otro, margen,*/
+.seccion-tinto .tinto{
+    width: 100%;/*98*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 15px;
+    justify-content: space-around;
+}
+
+/*editar las imagens*/
+.seccion-tinto .tinto img{
+    width: 22%;
+    margin: 10px;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.seccion-tinto .tinto .nombre{
+    width: 22%;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.vt{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 10px;
+    align-items: center;
+}
+
+.seccion-tinto .tinto img {
+    width: 248px;
+    height: 392px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/*Seccion del vino blanco, tamaño, color, borde*/
+.seccion-blanco{
+    width: 90%;
+    margin: 40px auto 0px auto;
+    background-color: #e4c68e;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+/*Editar titulo*/
+.seccion-blanco .titulo-b{
+    border-bottom: 2px solid #800000;
+    padding: 15px;
+    text-align: center;
+    width: 50%;/*para que no ocupe toda la pagina*/
+    margin: auto;
+}
+.seccion-blanco .titulo-b h2{
+    font-size: 36px;
+    color: #800000;
+}
+
+/*Galeria de imagenes que quiero que sea flexible y una al lado de otr*/
+.seccion-blanco .blanco{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 15px;
+    justify-content: space-around;
+}
+
+/*Editar las imagenes*/
+.seccion-blanco .blanco img{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+/*Tuve que crear otra caja con otro flex para que me quede el nombre abajo de la imagen*/
+.seccion-blanco .contenedor-nombre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 15px;
+}
+.seccion-blanco .contenedor-nombre p{
+    width: 22%;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.vb{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 10px;
+    align-items: center;
+}
+/*********************************************************************************************************************************/
+
+/*Editar el contenedor del contenido*/
+.main-presupuesto{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/presupuesto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;   
+}
+
+.presupuesto{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+/*Editar el contenedor de formlario y el titulo: tamaño, ubicacon, borde*/
+.presupuesto .form-container{
+    width: 60%;
+    margin: 50px auto; /*centrado*/
+    background-color: #e4c68e;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    padding: 30px;
+}
+
+/*titulo del formulario, tamaño, tipo,...*/
+.presupuesto .form-container .p-title{
+    width:  80%;
+    margin: auto; /*la caja sale centrado*/
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+}
+
+.presupuesto .form-container .p-title h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #800000;
+}
+
+/*Formulario, lo hago flexible y lo ubico en columnas*/
+.presupuesto .form-container .formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Editar los label y los input, tamaño, alineación, color, ubicacion*/
+.presupuesto .form-container .formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: #930909;
+    margin: 30px 0 10px 0;
+}
+
+.presupuesto .form-container .formulario input{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 18px;
+    color: #930909;
+}
+
+.presupuesto .form-container .formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 15px;
+    color: #930909;
+}
+
+.presupuesto .form-container .formulario .checkbox{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: left;
+    flex-direction: row;   
+}
+
+.presupuesto .form-container .formulario .checkbox p{
+    width: 650px;
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-left: 70px;
+}
+
+.presupuesto .form-container .formulario .checkbox .input-checkbox{
+    height: 25px;
+    margin-left: -365px;
+}
+
+/*Boton de enviar, le damos un tamaño, color, ubicacion*/
+.presupuesto .form-container .formulario .enviar{
+    width: 120px;
+    height: 40px;
+    margin: 15px auto;
+    text-align: center;
+    background-color: #930909;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*cambie de color cuando pongo el cursor*/
+.presupuesto .form-container .formulario .enviar:hover{
+    background-color: #a92f2f;
+}
+
+/**************************************************************************************************************************************/
+
+/*****************************/
+/**********CONTACTO**********/
+/*****************************/
+
+/*posicion del main y cololar fondo*/
+.main-contacto{
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*contenedor del mapa con la informacion, le damos flex para ubicar el contenido*/
+.contacto{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 65%;
+    margin: auto;
+    border: 1.5px solid black;
+    background-color: #e4c68e;
+    border-radius: 15px;
+    align-items: center;
+}
+
+/*posicionamos el contenido*/
+.contacto iframe{
+    padding: 30px;
+}
+
+.contacto .info{
+    margin-bottom: 130px;  
+}
+
+/*editamos tamaños, ubicación y la lista */
+.contacto .info h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 550;
+    color: #930909;
+    font-family: Cinzel, verdana;
+}
+
+.contacto .info ul{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.contacto .info ul li{
+    list-style: none;
+    line-height: 1.7;
+}
+
+
+
+
+/***************************/
+
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+    display: none;
+  }
+
+#open .show-btn{
+    display: block;
+}
+
+#close .show-btn{
+    display: block;
+}
+
+
+
+
+.menu-hamburguesa{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #930909;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+    display: none;
+}
+
+.menu-hamburguesa ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25%;
+    align-items: center;
+}
+
+.menu-hamburguesa ul li {
+    /*margin-top: 75px;*/
+    margin: 30px;
+    list-style: none;
+}
+
+
+.menu-hamburguesa a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/*Para cuando pase por arriba cambie de color*/
+.menu-hamburguesa a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*Para cuando este en esa pagina se quede en blanco la casilla*/
+.menu-hamburguesa a.activo{
+    background-color: #fff;
+    color: black;
+}
+
+#open{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+/**************Media Query******************************/
+
+/*****Seccion inicio*****/
+
+@media screen and (max-width:1150px) {
+    .nosotros .contenedor-nosotros img{
+        width: 425px;
+        height: 335px;
+    }
+    .nosotros .contenedor-nosotros p{
+        padding: 30px;
+    }
+    .bodega .contenedor-bodega img{
+        width: 425px;
+        height: 335px;
+    }
+    .bodega .contenedor-bodega p{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .nosotros .contenedor-nosotros{
+        margin-top: 80px;
+    }
+
+    .bodega .contenedor-bodega{
+        margin-top: 80px;
+    }
+
+    .nosotros .contenedor-nosotros img{
+        width: 375px;
+        height: 275px;
+        border-radius: 60px;
+    }
+    .nosotros .contenedor-nosotros p{
+        padding: 20px;
+        font-size: 15px;
+    }
+    .bodega .contenedor-bodega img{
+        width: 375px;
+        height: 275px;
+        border-radius: 60px;
+    }
+    .bodega .contenedor-bodega p{
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:970px){
+    .bodega h2{
+        width: 60%;
+        font-size: 33px;
+        padding: 18px;
+    }
+    .bodega .contenedor-bodega{
+        margin-top: 70px;
+    }
+    .bodega .contenedor-bodega img{
+        width: 325px;
+        height: 225px;
+        border-radius: 40px;
+    }
+    .bodega .contenedor-bodega p{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .nosotros h2{
+        width: 60%;
+        font-size: 33px;
+        padding: 18px;
+    }
+    .nosotros .contenedor-nosotros{
+        margin-top: 70px;
+    }
+    .nosotros .contenedor-nosotros img{
+        width: 325px;
+        height: 225px;
+        border-radius: 40px;
+    }
+    .nosotros .contenedor-nosotros p{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+ 
+    /*********footer*******/
+
+    .fin{
+        font-size: 13px;
+    }
+
+    /*******Presupuesto*******/
+    .presupuesto .form-container{
+        width: 90%;
+    }
+    .presupuesto .form-container .p-title h2{
+        font-size: 33px;
+    }
+    .presupuesto .form-container .formulario label{
+        font-size: 18px;
+    }
+    .presupuesto .form-container .formulario input{
+        font-size: 17px;
+    }
+    .presupuesto .form-container .formulario .enviar{
+        width: 110px;
+        height: 35px;
+    }
+
+    /*******galeria*******/
+
+    .seccion-tinto .titulo-t h2{
+        font-size: 33px;
+    }
+    .seccion-blanco .titulo-b h2{
+        font-size: 33px;
+
+    }
+    .seccion-blanco .blanco{
+        margin: 20px 0px;
+    }
+
+    .seccion-blanco .contenedor-nombre{
+        margin: 20px 0px;
+    }
+
+    .vt{
+        width: 43%;
+    }
+    .vb{
+        width: 43%;
+    }
+
+    /******Contacto**********/
+
+    .contacto{
+        width: 80%;
+    }
+    .main-contacto{
+        padding-top: 15%;
+    }
+    .contacto .info h2{
+        font-size: 30px;
+    }
+    .contacto .info ul{
+        font-size: 15px;
+    }
+    .contacto iframe{
+        height: 95%;
+        width: 80%;
+    }
+
+}
+
+
+
+@media screen and (max-width:850px){
+    .bienvenidos .portada{
+        padding-top: 18%;
+    }
+    
+    .nosotros h2{
+        width: 70%;
+    }
+    .nosotros .contenedor-nosotros{
+        flex-direction: column;
+    }
+    .nosotros .contenedor-nosotros img{
+        width: 400px;
+        height: 300px;
+        border-radius: 30px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .nosotros .contenedor-nosotros p{
+        line-height: 2;
+    }
+
+    .bodega h2{
+        width: 70%;
+    }
+    .bodega .contenedor-bodega{
+        flex-direction: column;
+    }
+    .bodega .contenedor-bodega img{
+        width: 400px;
+        height: 300px;
+        border-radius: 30px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .bodega .contenedor-bodega p{
+        line-height: 2;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:750px){
+    /*******inicio*******/
+    .bienvenidos h2 {
+        font-size: 70px;
+    }
+
+    /********footer*******/
+    .fin {
+        font-size: 14px;
+        flex-direction: column;
+    }
+    .fin .copy-ubicacion p {
+        margin-bottom: 7px;
+    }
+    /****contacto****/
+    .contacto{
+        flex-direction: column;
+
+        height: 90%;
+    }
+
+    .contacto iframe {
+        width: 101%;
+    }
+    .contacto .info {
+        margin-bottom: 25px;
+    }
+
+    .contacto .info h2 {
+        font-size: 27px;
+    }
+
+    .contacto .info ul {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    /*******************Galeria*****************/
+
+    .main-productos .seccion-tinto {
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .seccion-tinto .titulo-t h2 {
+        font-size: 25px;
+    }
+
+    .seccion-tinto .tinto{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .vt{
+        width: 80%;
+    }
+
+    .seccion-tinto .tinto img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .seccion-blanco{
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .seccion-blanco .titulo-b h2 {
+        font-size: 25px;
+    }
+
+    .seccion-blanco .blanco{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vb{
+        width: 80%;
+    }
+
+    /**************/
+    #open{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:599px){
+    .navegador .logo {
+        margin-left: 5px;
+    }
+    .navegador .logo h1 a{
+        font-size: 28px;
+    }
+
+    .bienvenidos h2 {
+        font-size: 45px;
+        margin-top: 30%;
+    }
+
+    .nosotros h2 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .nosotros .contenedor-nosotros p {
+        font-size: 12px;
+    }
+
+    .bodega h2 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .bodega .contenedor-bodega p {
+        font-size: 12px;
+    }
+/*******footer******/
+    .fin {
+        font-size: 12px;
+       
+    }
+  
+
+    /*******************Galeria*****************/
+
+    .main-productos .seccion-tinto {
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .seccion-tinto .titulo-t h2 {
+        font-size: 25px;
+    }
+
+    .seccion-tinto .tinto{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .vt{
+        width: 80%;
+    }
+
+    .seccion-tinto .tinto img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .seccion-blanco{
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .seccion-blanco .titulo-b h2 {
+        font-size: 25px;
+    }
+
+    .seccion-blanco .blanco{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vb{
+        width: 80%;
+    }
+
+
+
+    /***************Presupuesto**************/
+
+    .presupuesto .form-container {
+        width: 90%;
+    }
+    .presupuesto .form-container .p-title {
+        width: 90%;
+    }
+
+    .presupuesto .form-container .p-title h2 {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .presupuesto .form-container .formulario label {
+        font-size: 16px;
+    }
+
+    .presupuesto .form-container .formulario input {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .presupuesto .form-container .formulario .checkbox {
+        flex-direction: column;
+    }
+
+    .presupuesto .form-container .formulario .checkbox p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .presupuesto .form-container .formulario .checkbox .input-checkbox {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
